@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>/javascript Practical</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">@Cordero CoffeeBreak ☕</div>
+  <button id="menuToggle" class="menu-btn">☰</button>
+
+  <ul id="navLinks" class="nav-links">
+    <li><a href="#homeSection">Home</a></li>
+    <li><a href="#menuSection">Menu</a></li>
+    <li><a href="#orderSection">Order</a></li>
+    <li><a href="#specialSection">Special</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="homeSection" class="hero">
+  <div class="hero-content">
+    <h1>Freshly Brewed Happiness</h1>
+    <p>Tell us your name to start your order ☕</p>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button id="greetButton">Start Order</button>
+    <p id="greetingMessage"></p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menuSection" class="menu-section">
+  <h2>Our Coffee Menu</h2>
+
+  <div class="menu-container">
+
+    <div class="menu-card">
+      <img src="images/image-one.jpg" alt="">
+      <h3>Latte</h3>
+      <p>₱150</p>
+      <button class="addCoffee">Add to Order</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/image-two.jpg" alt="">
+      <h3>Cappuccino</h3>
+      <p>₱160</p>
+      <button class="addCoffee">Add to Order</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/image-three.jpg" alt="">
+      <h3>Espresso</h3>
+      <p>₱120</p>
+      <button class="addCoffee">Add to Order</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ORDER -->
+<section id="orderSection" class="order-section">
+  <h2>Your Coffee Counter</h2>
+  <p id="counter">0</p>
+
+  <div class="btn-group">
+    <button id="incrementButton">Add ☕</button>
+    <button id="decrementButton">Remove</button>
+    <button id="clearButton">Reset</button>
+  </div>
+</section>
+
+<!-- SPECIAL -->
+<section id="specialSection" class="special-section">
+  <h2>Today's Special</h2>
+  <button id="addParagraphButton">Reveal Special</button>
+  <div id="paragraphContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+
+<footer>
+  <p>© 2026 @corderoCoffeeBreak. All rights reserved.</p>
+</footer>
+
+</html>
