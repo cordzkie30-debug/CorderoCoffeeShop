@@ -90,3 +90,26 @@ addParagraphButton.addEventListener('click', function () {
   paragraphContainer.appendChild(newParagraph);
 
 });
+
+const openBtn = document.getElementById("openVideoBtn");
+const modal = document.getElementById("videoModal");
+const closeBtn = document.getElementById("closeVideoBtn");
+const video = document.getElementById("coffeeVideo");
+
+openBtn.addEventListener("click", () => {
+  modal.style.display = "flex";
+  video.src = "https://www.youtube.com/embed/-dQ75USmQZo?autoplay=1";
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  video.src = "";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    video.src = "";
+  }
+});
+
