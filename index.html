@@ -17,6 +17,8 @@
     <li><a href="#menuSection">Menu</a></li>
     <li><a href="#orderSection">Order</a></li>
     <li><a href="#specialSection">Special</a></li>
+    <li><a href="#videoSection">Video</a></li>
+
   </ul>
 </nav>
 
@@ -79,6 +81,31 @@
   <button id="addParagraphButton">Reveal Special</button>
   <div id="paragraphContainer"></div>
 </section>
+
+<!-- VIDEO SECTION -->
+<section id="videoSection" class="video-section">
+  <h2>Feel The Music While ☕</h2>
+  <p>Relax. Sip. Enjoy the vibe.</p>
+
+  <button id="openVideoBtn">Watch Coffee Video 🎥</button>
+</section>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="video-modal">
+  <div class="video-box">
+    <span id="closeVideoBtn">&times;</span>
+    <iframe 
+      id="coffeeVideo"
+      src=""
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
 
 <script src="script.js"></script>
 </body>
